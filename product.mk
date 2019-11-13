@@ -7,6 +7,7 @@ GAPPS_VARIANT := nano
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 endif
 
+PRODUCT_PACKAGES += OclickHandler
 
 # Recovery ADB keys
 PRODUCT_COPY_FILES += \
