@@ -3,8 +3,7 @@
 DEVICE := $(shell echo $(LINEAGE_BUILD) | sed 's/^.*-//')
 
 ifeq ($(WITH_GMS), true)
-GAPPS_VARIANT := nano
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
 endif
 
 PRODUCT_PACKAGES += OclickHandler
