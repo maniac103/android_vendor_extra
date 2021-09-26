@@ -8,7 +8,13 @@ endif
 
 PRODUCT_PACKAGES += OclickHandler
 
+# Safetynet
+PRODUCT_PACKAGES += ih8sn.conf.enchilada
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
+
+# Soong
+PRODUCT_SOONG_NAMESPACES += vendor/extra
 
 # Recovery ADB keys
 PRODUCT_COPY_FILES += \

@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "ih8sn.conf.enchilada",
+    src: "ih8sn.conf.enchilada",
+    filename: "ih8sn.conf",
+    required: ["ih8sn"],
+}
