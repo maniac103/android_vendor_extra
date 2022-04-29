@@ -3,7 +3,7 @@
 DEVICE := $(shell echo $(LINEAGE_BUILD) | sed 's/^.*-//')
 
 ifeq ($(WITH_GMS), true)
-$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
 PRODUCT_PACKAGES += OclickHandler
