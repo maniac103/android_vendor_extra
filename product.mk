@@ -8,6 +8,11 @@ endif
 
 PRODUCT_PACKAGES += OclickHandler
 
+# Email
+PRODUCT_PACKAGES += Email
+PRODUCT_COPY_FILES += \
+    vendor/extra/sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/custom.xml
+
 # Safetynet
 PRODUCT_PACKAGES += ih8sn.conf.enchilada
 
